@@ -47,13 +47,19 @@ namespace GeoLocations.Services
             switch (measureType)
             {
                 case DistanceMeasure.Kilometers:
-                    return 6371;
+                    return 6378.16;
                 case DistanceMeasure.Meters:
-                    return 6371000;
+                    return 6378160;
                 case DistanceMeasure.Miles:
-                    return 3960;
+                    return 3963.205;
                 case DistanceMeasure.NauticalMiles:
-                    return 3440;
+                    return 3443.931;
+                case DistanceMeasure.Foot:
+                    return 20925721.785;
+                case DistanceMeasure.KiloYard:
+                    return 6975.241;
+                case DistanceMeasure.Yard:
+                    return 6975240.595;
                 default:
                     return 6371;
             }
