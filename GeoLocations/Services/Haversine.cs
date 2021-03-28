@@ -18,7 +18,7 @@ namespace GeoLocations.Services
         /// <returns>The distance in the measure type specified</returns>
         public double Distance(GeoCoordinate pos1, GeoCoordinate pos2, DistanceMeasure measureType)
         {
-            double earthRadius = (measureType == DistanceMeasure.Miles) ? 3960 : 6371;
+            double earthRadius = GetEarthRadius(measureType);
  
             double lat = ToRadian(pos2.Latitude - pos1.Latitude);
             double lon = ToRadian(pos2.Longitude - pos1.Longitude);
@@ -40,6 +40,23 @@ namespace GeoLocations.Services
         private static double ToRadian(double val)
         {
             return (Math.PI / 180) * val;
+        }
+
+        private static double GetEarthRadius(DistanceMeasure measureType)
+        {
+            switch (measureType)
+            {
+                case DistanceMeasure.Kilometers:
+                    return 6371;
+                case DistanceMeasure.Meters:
+                    return 6371000;
+                case DistanceMeasure.Miles:
+                    return 3960;
+                case DistanceMeasure.NauticalMiles:
+                    return 3440;
+                default:
+                    return 6371;
+            }
         }
     }
 }

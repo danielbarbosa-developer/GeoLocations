@@ -2,7 +2,10 @@
 {
     public enum DistanceMeasure
     {
+        Kilometers,
+        Meters,
         Miles, 
-        Kilometers
+        NauticalMiles
+        
     }
 }
