@@ -1,11 +1,11 @@
 # GeoLocations
 A Nuget package created to work with geographic coordinates.
 
-### New in Version 1.1.0
+https://github.com/danielbarbosa-developer/GeoLocations/actions/workflows/dotnet.yml/badge.svg
 
-* Methods to get azimuth and direction between a origin coordinate and destiny coordinate;
-* More distance measure units (Meters, Nautical Miles, KiloYard, Yard, Foot);
-* Conversion methods;
+### New in Version 2.0.0
+
+* Moving to .NET Standard;
 
 ## Download GeoLocations Package
 
@@ -39,6 +39,7 @@ This class allows to get distance between two coordinates points, see the exampl
 ```c#
 using GeoLocations.Entities;
 using GeoLocations.Services;
+using GeoLocations.Measures;
 
 namespace YourNamespace
 {
@@ -62,7 +63,6 @@ The result will be in the chosen unit of measure.
 This class allows you to find the azimuth angle from an origin coordinate to a destination coordinate using the GetAzimuth method:
 ```c#
 using GeoLocations.Entities;
-using GeoLocations.Measures;
 using GeoLocations.Services;
 
 namespace YourNamespace
