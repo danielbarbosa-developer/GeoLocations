@@ -8,6 +8,12 @@ namespace GeoLocations.Services
 {
     public class Directions
     {
+        /// <summary>
+        /// Gets the direction (Ex. North) through the azimuth angle informed
+        /// </summary>
+        /// <param name="azimuthAngle">The azimuth angle as decimal value</param>
+        /// <returns>A Direction object setted</returns>
+        /// <exception cref="DirectionException"></exception>
         public Direction GetDirection(double azimuthAngle)
         {
             if (azimuthAngle >= 337.5 || azimuthAngle <= 22.5) return DirectionSetter.North;

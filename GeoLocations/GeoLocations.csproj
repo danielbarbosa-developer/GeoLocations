@@ -1,13 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.2.0</PackageVersion>
         <Title>GeoLocations</Title>
-        <Authors>Daniel Barbosa</Authors>
         <Description>A Nuget package created to work with geographic coordinates.</Description>
+        <Copyright>(c)2021 Daniel Barbosa</Copyright>
+        <RepositoryType>Github</RepositoryType>
+        <PackageProjectUrl>https://github.com/danielbarbosa-developer/GeoLocations</PackageProjectUrl>
         <RepositoryUrl>https://github.com/danielbarbosa-developer/GeoLocations</RepositoryUrl>
-        <PackageReleaseNotes>This first version offers entities to work with decimal coordinates and ways to calculate distances between two points on Earth.</PackageReleaseNotes>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReleaseNotes>Moving to .NET Standard;
+</PackageReleaseNotes>
     </PropertyGroup>
-
+    <ItemGroup>
+        <None Include="..\LICENSE">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+    </ItemGroup>
 </Project>

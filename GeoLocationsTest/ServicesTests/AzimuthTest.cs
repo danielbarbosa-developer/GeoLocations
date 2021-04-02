@@ -2,7 +2,7 @@
 using GeoLocations.Services;
 using NUnit.Framework;
 
-namespace GeoLocationsTest.ServicesTest
+namespace GeoLocationsTest.ServicesTests
 {
     public class AzimuthTest
     {

@@ -61,7 +61,7 @@ namespace GeoLocations.Services
                 case DistanceMeasure.Yard:
                     return 6975240.595;
                 default:
-                    return 6371;
+                    return 6378.16;
             }
         }
     }

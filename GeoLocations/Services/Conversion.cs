@@ -5,7 +5,7 @@ namespace GeoLocations.Services
     /// <summary>
     /// A class that provides conversion methods to common measures used to work with coordinates
     /// </summary>
-    public static class Conversion
+    public class Conversion
     {
         /// <summary>
         /// Converts radian value to a azimuth angle
