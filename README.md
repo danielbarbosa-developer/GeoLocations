@@ -1,7 +1,7 @@
 # GeoLocations
 A Nuget package created to work with geographic coordinates.
 
-https://github.com/danielbarbosa-developer/GeoLocations/actions/workflows/dotnet.yml/badge.svg
+![Build Status](https://github.com/danielbarbosa-developer/GeoLocations/actions/workflows/dotnet.yml/badge.svg)
 
 ### New in Version 2.0.0
 
