@@ -5,7 +5,7 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>1.2.0</PackageVersion>
+        <PackageVersion>2.0.0</PackageVersion>
         <Title>GeoLocations</Title>
         <Description>A Nuget package created to work with geographic coordinates.</Description>
         <Copyright>(c)2021 Daniel Barbosa</Copyright>
